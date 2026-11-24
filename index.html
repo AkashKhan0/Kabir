@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humayon Kabir — Digital Operations Executive &amp; CSE Graduate</title>
+    <meta
+      name="description"
+      content="Portfolio of Humayon Kabir — Digital Operations Executive, B.Sc. in Computer Science & Engineering graduate, and web technologist based in Dhaka, Bangladesh."
+    />
+    <meta property="og:title" content="Humayon Kabir — Portfolio" />
+    <meta
+      property="og:description"
+      content="Digital Operations Executive, B.Sc. in Computer Science & Engineering graduate, and web technologist."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true">
+      <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <!-- Zone 1: Single-line Brand Wordmark -->
+        <a href="#about" class="brand-mark">Humayon Kabir</a>
+
+        <!-- Zone 2: 5 concise single-line navigation links -->
+        <nav class="primary-nav" aria-label="Primary Navigation">
+          <a href="#about" class="nav-link active">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Zone 3: 1 primary CTA + mobile drawer button -->
+        <div class="header-actions">
+          <a href="#contact" class="btn btn-primary header-cta">Get in Touch</a>
+          <button
+            type="button"
+            id="mobileMenuBtn"
+            class="mobile-menu-btn"
+            aria-expanded="false"
+            aria-controls="mobileDrawer"
+            aria-label="Toggle navigation menu"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="3" y1="7" x2="21" y2="7"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="17" x2="21" y2="17"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobileDrawer" class="mobile-drawer" hidden>
+        <nav class="mobile-nav" aria-label="Mobile Navigation">
+          <a href="#about" class="mobile-nav-link">About</a>
+          <a href="#experience" class="mobile-nav-link">Experience</a>
+          <a href="#skills" class="mobile-nav-link">Skills</a>
+          <a href="#education" class="mobile-nav-link">Education</a>
+          <a href="#contact" class="mobile-nav-link">Contact</a>
+          <a href="#contact" class="btn btn-primary mobile-cta">Get in Touch</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="about" class="hero-section">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Left Column: Typographic Hierarchy -->
+            <div class="hero-copy">
+              <div class="hero-kicker animate-enter" style="--delay: 0ms">
+                <span>Aspiring Professional</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>B.Sc in CSE (2024)</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>Dhaka, Bangladesh</span>
+              </div>
+
+              <h1 class="hero-title animate-enter" style="--delay: 70ms">
+                Engineering reliable
+                <span class="role-rotator-wrap">
+                  <span id="roleRotator" class="role-rotator is-entering" aria-live="polite">
+                    digital operations
+                  </span>
+                </span>
+                with clarity and precision.
+              </h1>
+
+              <p class="hero-summary animate-enter" style="--delay: 140ms">
+                A motivated, responsible, and adaptable individual with strong communication,
+                problem-solving, and time management skills. A quick learner with a positive
+                attitude, committed to professional growth, teamwork, and delivering quality
+                results. Eager to contribute skills and dedication to organizational success.
+              </p>
+
+              <div class="hero-actions animate-enter" style="--delay: 210ms">
+                <a href="#experience" class="btn btn-primary">
+                  <span>Explore Experience</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+
+                <button type="button" id="printCvBtn" class="btn btn-secondary">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                    <rect x="6" y="14" width="12" height="8"></rect>
+                  </svg>
+                  <span>Print / Save CV</span>
+                </button>
+
+                <button
+                  type="button"
+                  id="themeToggleBtn"
+                  class="btn btn-ghost"
+                  aria-label="Switch color theme"
+                >
+                  <svg id="themeIconSun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                  <svg id="themeIconMoon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" hidden>
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                  </svg>
+                  <span id="themeToggleLabel">Light Mode</span>
+                </button>
+              </div>
+
+              <div class="hero-contact-line animate-enter" style="--delay: 260ms">
+                <a href="mailto:humayonkabir.cse50@gmail.com">humayonkabir.cse50@gmail.com</a>
+                <span aria-hidden="true">/</span>
+                <a href="tel:01726984070" class="mono">01726984070</a>
+                <span aria-hidden="true">/</span>
+                <a href="https://humatonkabir.com" target="_blank" rel="noreferrer">humatonkabir.com</a>
+              </div>
+            </div>
+
+            <!-- Right Column: Architectural Geometric Profile Card (No Portrait Image) -->
+            <div class="hero-visual animate-enter" style="--delay: 150ms">
+              <div class="tilt-card" id="heroTiltCard">
+                <div class="tilt-card-glow" aria-hidden="true"></div>
+
+                <div class="monogram-header">
+                  <div class="monogram-emblem" aria-hidden="true">HK</div>
+                  <div class="monogram-meta">
+                    <span class="monogram-name">Humayon Kabir</span>
+                    <span class="monogram-role">Digital Operations Executive</span>
+                  </div>
+                </div>
+
+                <div class="blueprint-grid">
+                  <div class="blueprint-cell">
+                    <span class="cell-label">Current Organization</span>
+                    <span class="cell-value">A Plus Advertising LTD</span>
+                    <span class="cell-sub mono">Jan 5, 2025 – Present</span>
+                  </div>
+                  <div class="blueprint-cell">
+                    <span class="cell-label">Academic Degree</span>
+                    <span class="cell-value">B.Sc in CSE</span>
+                    <span class="cell-sub mono">City University · 2024 · GPA 2.99</span>
+                  </div>
+                </div>
+
+                <div class="stack-showcase">
+                  <div class="stack-label">Core Stack &amp; Tooling</div>
+                  <div class="stack-flow">
+                    <span>HTML5</span>
+                    <span aria-hidden="true">&middot;</span>
+                    <span>CSS3</span>
+                    <span aria-hidden="true">&middot;</span>
+                    <span>Tailwind</span>
+                    <span aria-hidden="true">&middot;</span>
+                    <span>Bootstrap</span>
+                    <span aria-hidden="true">&middot;</span>
+                    <span>JavaScript</span>
+                    <span aria-hidden="true">&middot;</span>
+                    <span>C / C++</span>
+                    <span aria-hidden="true">&middot;</span>
+                    <span>Java</span>
+                    <span aria-hidden="true">&middot;</span>
+                    <span>WordPress</span>
+                  </div>
+                </div>
+
+                <div class="card-footer-ledger">
+                  <div>
+                    <span class="ledger-title">Location</span>
+                    <span class="ledger-desc">Mirpur, Dhaka - 1216</span>
+                  </div>
+                  <div>
+                    <span class="ledger-title">Languages</span>
+                    <span class="ledger-desc">Bangla, English, Hindi, Urdu</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Full-Width 4-Column Key Highlights Strip -->
+          <div class="metrics-strip reveal">
+            <div class="metric-item">
+              <span class="metric-value mono">2024</span>
+              <span class="metric-label">B.Sc in CSE</span>
+              <span class="metric-sub">City University, Bangladesh · GPA 2.99</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value mono">2025–Present</span>
+              <span class="metric-label">Digital Operations</span>
+              <span class="metric-sub">A Plus Advertising LTD</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value mono">13+</span>
+              <span class="metric-label">Technologies &amp; Tools</span>
+              <span class="metric-sub">Web, Programming, WordPress &amp; Office</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value mono">04</span>
+              <span class="metric-label">Languages Spoken</span>
+              <span class="metric-sub">Bangla, English, Hindi &amp; Urdu</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Animated Marquee Ribbon -->
+      <div class="marquee-band no-print" aria-hidden="true">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span>Digital Operations Executive</span>
+            <span class="sep">&middot;</span>
+            <span>Computer Science &amp; Engineering</span>
+            <span class="sep">&middot;</span>
+            <span>HTML, CSS, Tailwind, Bootstrap, JavaScript</span>
+            <span class="sep">&middot;</span>
+            <span>C, C++, Java &amp; WordPress</span>
+            <span class="sep">&middot;</span>
+            <span>IT Systems, CCTV &amp; Access Control</span>
+            <span class="sep">&middot;</span>
+            <span>Team &amp; Contractor Supervision</span>
+            <span class="sep">&middot;</span>
+          </div>
+          <div class="marquee-group">
+            <span>Digital Operations Executive</span>
+            <span class="sep">&middot;</span>
+            <span>Computer Science &amp; Engineering</span>
+            <span class="sep">&middot;</span>
+            <span>HTML, CSS, Tailwind, Bootstrap, JavaScript</span>
+            <span class="sep">&middot;</span>
+            <span>C, C++, Java &amp; WordPress</span>
+            <span class="sep">&middot;</span>
+            <span>IT Systems, CCTV &amp; Access Control</span>
+            <span class="sep">&middot;</span>
+            <span>Team &amp; Contractor Supervision</span>
+            <span class="sep">&middot;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Experience Section -->
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Career Timeline</p>
+              <h2 class="section-title">Work Experience &amp; Operations</h2>
+            </div>
+
+            <div class="filter-tabs no-print" role="tablist" aria-label="Filter experience roles">
+              <button type="button" class="filter-tab is-active" data-exp-filter="all" role="tab" aria-selected="true">
+                All Roles
+              </button>
+              <button type="button" class="filter-tab" data-exp-filter="operations" role="tab" aria-selected="false">
+                Operations &amp; IT
+              </button>
+              <button type="button" class="filter-tab" data-exp-filter="management" role="tab" aria-selected="false">
+                Management
+              </button>
+            </div>
+          </div>
+
+          <div class="experience-grid" id="experienceGrid">
+            <article class="surface-card experience-card reveal" data-exp-category="operations">
+              <div class="card-meta mono">
+                <span>January 5, 2025 – Present</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>A Plus Advertising LTD</span>
+              </div>
+              <h3 class="card-title">Digital Operations Executive</h3>
+              <p class="card-lead">
+                Coordinating contractor deliverables, IT hardware deployment, enterprise security
+                systems, machinery maintenance, and management information systems.
+              </p>
+              <ul class="bullet-list">
+                <li>Supervised contractor work according to schedules and standards.</li>
+                <li>Managed teams and maintained management information systems.</li>
+                <li>Coordinated machinery design, installation, and maintenance.</li>
+                <li>Installed and configured computer equipment and IT components.</li>
+                <li>Managed IT devices, software, CCTV, access control, and security systems.</li>
+                <li>Monitored and operated management systems.</li>
+              </ul>
+            </article>
+
+            <article class="surface-card experience-card reveal" data-exp-category="management">
+              <div class="card-meta mono">
+                <span>2025 – 2026</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>Hospitality &amp; Business Operations</span>
+              </div>
+              <h3 class="card-title">Restaurant Owner &amp; Manager</h3>
+              <p class="card-lead">
+                Directed end-to-end daily operations, financial oversight, supplier relations,
+                inventory control, and customer service quality.
+              </p>
+              <ul class="bullet-list">
+                <li>Managed daily restaurant operations.</li>
+                <li>Handled sales, cash, and financial management.</li>
+                <li>Supervised food quality and customer service.</li>
+                <li>Managed inventory and supplier communication.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills & Technologies Section -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Technical &amp; Operational Stack</p>
+              <h2 class="section-title">Skills, Technologies &amp; Expertise</h2>
+            </div>
+
+            <div class="filter-tabs no-print" role="tablist" aria-label="Filter skills by category">
+              <button type="button" class="filter-tab is-active" data-skill-filter="all" role="tab" aria-selected="true">
+                All Skills
+              </button>
+              <button type="button" class="filter-tab" data-skill-filter="web" role="tab" aria-selected="false">
+                Web &amp; Code
+              </button>
+              <button type="button" class="filter-tab" data-skill-filter="systems" role="tab" aria-selected="false">
+                IT &amp; Ops
+              </button>
+              <button type="button" class="filter-tab" data-skill-filter="office" role="tab" aria-selected="false">
+                CMS &amp; Office
+              </button>
+              <button type="button" class="filter-tab" data-skill-filter="soft" role="tab" aria-selected="false">
+                Soft Skills
+              </button>
+            </div>
+          </div>
+
+          <div class="skills-grid" id="skillsGrid">
+            <article class="surface-card skill-card reveal" data-skill-category="web">
+              <h3 class="card-title">Technologies &amp; Programming</h3>
+              <p class="card-subtitle">Front-end web interfaces, styling frameworks, and programming languages</p>
+              <div class="spec-rows">
+                <div class="spec-row">
+                  <span class="spec-name">HTML &amp; CSS</span>
+                  <span class="spec-detail">Semantic layout &amp; responsive design</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Tailwind &amp; Bootstrap</span>
+                  <span class="spec-detail">Modern utility &amp; grid UI frameworks</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">JavaScript</span>
+                  <span class="spec-detail">Interactive DOM &amp; client-side workflows</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">C &amp; C++</span>
+                  <span class="spec-detail">Structured programming &amp; algorithms</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Java</span>
+                  <span class="spec-detail">Object-oriented software foundations</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="surface-card skill-card reveal" data-skill-category="systems">
+              <h3 class="card-title">IT Operations &amp; Security Systems</h3>
+              <p class="card-subtitle">Hardware setup, infrastructure reliability, and systems supervision</p>
+              <div class="spec-rows">
+                <div class="spec-row">
+                  <span class="spec-name">IT Hardware &amp; Components</span>
+                  <span class="spec-detail">Installation, configuration &amp; maintenance</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">CCTV &amp; Access Control</span>
+                  <span class="spec-detail">Security device operation &amp; monitoring</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Management Information Systems</span>
+                  <span class="spec-detail">MIS operation &amp; operational tracking</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Basic Computer Operations</span>
+                  <span class="spec-detail">System administration &amp; software setup</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Internet &amp; Email Communication</span>
+                  <span class="spec-detail">Professional digital correspondence</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="surface-card skill-card reveal" data-skill-category="office">
+              <h3 class="card-title">CMS Platforms &amp; Office Suite</h3>
+              <p class="card-subtitle">Content management, reporting spreadsheets, and executive presentations</p>
+              <div class="spec-rows">
+                <div class="spec-row">
+                  <span class="spec-name">WordPress (CMS)</span>
+                  <span class="spec-detail">Website publishing &amp; content workflows</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Microsoft Word</span>
+                  <span class="spec-detail">Documentation &amp; operational reports</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Microsoft Excel</span>
+                  <span class="spec-detail">Inventory, sales &amp; financial sheets</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Microsoft PowerPoint</span>
+                  <span class="spec-detail">Presentations &amp; visual briefings</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Microsoft Office Applications</span>
+                  <span class="spec-detail">End-to-end workplace productivity</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="surface-card skill-card reveal" data-skill-category="soft">
+              <h3 class="card-title">Soft Skills &amp; Execution</h3>
+              <p class="card-subtitle">Collaborative leadership, clear communication, and reliable delivery</p>
+              <div class="spec-rows">
+                <div class="spec-row">
+                  <span class="spec-name">Problem-Solving</span>
+                  <span class="spec-detail">Practical troubleshooting under timelines</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Collaboration &amp; Teamwork</span>
+                  <span class="spec-detail">Supervising teams &amp; external contractors</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Adaptability &amp; Quick Learning</span>
+                  <span class="spec-detail">Fast mastery of new systems &amp; workflows</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Time Management</span>
+                  <span class="spec-detail">Schedule adherence &amp; priority tracking</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">Strong Communication</span>
+                  <span class="spec-detail">Multilingual stakeholder coordination</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education, Languages & Hobbies Section -->
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Academic Credentials</p>
+              <h2 class="section-title">Education, Languages &amp; Interests</h2>
+            </div>
+          </div>
+
+          <div class="education-grid">
+            <article class="surface-card edu-card reveal">
+              <span class="card-meta mono">Passing Year: 2024 &middot; GPA 2.99</span>
+              <h3 class="card-title">B.Sc in Computer Science &amp; Engineering (CSE)</h3>
+              <p class="edu-inst">City University, Bangladesh</p>
+              <p class="card-subtitle">
+                Comprehensive undergraduate engineering degree covering programming, algorithms,
+                web technologies, and software systems.
+              </p>
+            </article>
+
+            <article class="surface-card edu-card reveal">
+              <span class="card-meta mono">2017</span>
+              <h3 class="card-title">Higher Secondary Certificate (HSC)</h3>
+              <p class="edu-inst">Ibne Taimia High School &amp; College</p>
+              <p class="card-subtitle">
+                Completed Higher Secondary studies with analytical and computing foundations.
+              </p>
+            </article>
+
+            <article class="surface-card edu-card reveal">
+              <span class="card-meta mono">2015</span>
+              <h3 class="card-title">Secondary School Certificate (SSC)</h3>
+              <p class="edu-inst">Bamish Hazi A.A. High School</p>
+              <p class="card-subtitle">
+                Completed Secondary education with strong academic discipline and teamwork.
+              </p>
+            </article>
+          </div>
+
+          <div class="sub-split">
+            <div class="reveal">
+              <h3 class="sub-heading">Languages</h3>
+              <p class="card-subtitle mb-sm">
+                Effective verbal and written communication across four languages.
+              </p>
+              <div class="ledger-list border-y">
+                <div class="ledger-row">
+                  <span class="ledger-key">Bangla</span>
+                  <span class="ledger-val">Native</span>
+                </div>
+                <div class="ledger-row">
+                  <span class="ledger-key">English</span>
+                  <span class="ledger-val">Proficient</span>
+                </div>
+                <div class="ledger-row">
+                  <span class="ledger-key">Hindi</span>
+                  <span class="ledger-val">Conversational</span>
+                </div>
+                <div class="ledger-row">
+                  <span class="ledger-key">Urdu</span>
+                  <span class="ledger-val">Conversational</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal">
+              <h3 class="sub-heading">Hobbies &amp; Interests</h3>
+              <p class="card-subtitle mb-sm">
+                Continuous learning, event operations, and hands-on development.
+              </p>
+              <div class="hobbies-grid">
+                <div class="mini-card">
+                  <h4>Reading Tech-Related Content</h4>
+                  <p>Following modern web tools, software engineering, and digital systems.</p>
+                </div>
+                <div class="mini-card">
+                  <h4>Technician, Event &amp; Cultural Program Management</h4>
+                  <p>Coordinating technical setups, schedules, and live event logistics.</p>
+                </div>
+                <div class="mini-card">
+                  <h4>Indoor &amp; Outdoor Games</h4>
+                  <p>Maintaining focus, teamwork, and strategic thinking outside work.</p>
+                </div>
+                <div class="mini-card">
+                  <h4>Developing Personal Projects</h4>
+                  <p>Designing and building clean websites using HTML, CSS, and JavaScript.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Personal Information & Contact Section -->
+      <section id="contact" class="section section-last">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Profile &amp; Direct Reach</p>
+              <h2 class="section-title">Personal Information &amp; Contact</h2>
+            </div>
+          </div>
+
+          <div class="contact-grid">
+            <div class="surface-card reveal">
+              <h3 class="card-title mb-md">Personal Information</h3>
+              <dl class="ledger-list border-t">
+                <div class="ledger-row">
+                  <dt class="ledger-key">Full Name</dt>
+                  <dd class="ledger-val">Humayon Kabir</dd>
+                </div>
+                <div class="ledger-row">
+                  <dt class="ledger-key">Date of Birth</dt>
+                  <dd class="ledger-val">November 11, 2000</dd>
+                </div>
+                <div class="ledger-row">
+                  <dt class="ledger-key">Nationality</dt>
+                  <dd class="ledger-val">Bangladeshi (By Birth)</dd>
+                </div>
+                <div class="ledger-row">
+                  <dt class="ledger-key">Religion</dt>
+                  <dd class="ledger-val">Islam</dd>
+                </div>
+                <div class="ledger-row">
+                  <dt class="ledger-key">Marital Status</dt>
+                  <dd class="ledger-val">Married</dd>
+                </div>
+                <div class="ledger-row">
+                  <dt class="ledger-key">Present Address</dt>
+                  <dd class="ledger-val">South Monipur, Mirpur, Dhaka - 1216</dd>
+                </div>
+                <div class="ledger-row">
+                  <dt class="ledger-key">Permanent Address</dt>
+                  <dd class="ledger-val">Birkot, Ward-05, Senbagh, Kankir Hat - 3863, Noakhali</dd>
+                </div>
+              </dl>
+
+              <div class="direct-channels">
+                <div class="channel-row">
+                  <div>
+                    <span class="channel-label">Email</span>
+                    <a href="mailto:humayonkabir.cse50@gmail.com" class="channel-value">
+                      humayonkabir.cse50@gmail.com
+                    </a>
+                  </div>
+                  <button
+                    type="button"
+                    class="copy-btn no-print"
+                    data-copy="humayonkabir.cse50@gmail.com"
+                  >
+                    Copy
+                  </button>
+                </div>
+
+                <div class="channel-row">
+                  <div>
+                    <span class="channel-label">Phone</span>
+                    <a href="tel:01726984070" class="channel-value mono">01726984070</a>
+                  </div>
+                  <button
+                    type="button"
+                    class="copy-btn no-print"
+                    data-copy="01726984070"
+                  >
+                    Copy
+                  </button>
+                </div>
+
+                <div class="channel-row">
+                  <div>
+                    <span class="channel-label">Website</span>
+                    <a
+                      href="https://humatonkabir.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="channel-value accent-link"
+                    >
+                      humatonkabir.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="surface-card no-print reveal">
+              <h3 class="card-title">Send a Message</h3>
+              <p class="card-subtitle mb-md">
+                Open to opportunities in Digital Operations, IT Administration, and Web Development.
+              </p>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-row-2">
+                  <div class="field">
+                    <label for="senderName">Your Name</label>
+                    <input
+                      id="senderName"
+                      name="senderName"
+                      type="text"
+                      placeholder="e.g. Tariqul Islam"
+                      required
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="senderEmail">Email Address</label>
+                    <input
+                      id="senderEmail"
+                      name="senderEmail"
+                      type="email"
+                      placeholder="you@company.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="senderSubject">Subject</label>
+                  <input
+                    id="senderSubject"
+                    name="senderSubject"
+                    type="text"
+                    placeholder="Role opportunity or project discussion"
+                  />
+                </div>
+
+                <div class="field">
+                  <label for="senderMessage">Message</label>
+                  <textarea
+                    id="senderMessage"
+                    name="senderMessage"
+                    rows="4"
+                    placeholder="Write your message here..."
+                    required
+                  ></textarea>
+                </div>
+
+                <p id="formFeedback" class="form-feedback" aria-live="polite" hidden></p>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                  <a href="mailto:humayonkabir.cse50@gmail.com" class="btn btn-secondary">
+                    Open Email App
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer no-print">
+      <div class="container footer-inner">
+        <div>
+          <strong>Humayon Kabir</strong>
+          <span aria-hidden="true">&middot;</span>
+          <span>Dhaka &amp; Noakhali, Bangladesh</span>
+        </div>
+        <div class="footer-links">
+          <a href="#about">Top</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
